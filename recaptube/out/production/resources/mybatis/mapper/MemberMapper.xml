@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.recaptube.recaptube.storage.mybatis.MemberMybatisMapper">
+
+<!--    <resultMap id="MemberMap" type="com.recaptube.recaptube.storage.mybatis.MemberMybatisDto">-->
+<!--        <id property="id" column="id" javaType="long" jdbcType="NUMERIC"/>-->
+<!--        <id property="name" column="name" javaType="string" jdbcType="VARCHAR"/>-->
+<!--        <id property="ldapId" column="ldap_id" javaType="string" jdbcType="VARCHAR"/>-->
+<!--        <id property="company" column="company" javaType="string" jdbcType="VARCHAR"/>-->
+<!--        <id property="team" column="team" javaType="string" jdbcType="VARCHAR"/>-->
+<!--        <id property="role" column="role" javaType="string" jdbcType="VARCHAR"/>-->
+<!--        <id property="loginFailCount" column="login_fail_count" javaType="integer" jdbcType="NUMERIC"/>-->
+<!--        <id property="loginStatus" column="login_status" javaType="string" jdbcType="VARCHAR"/>-->
+<!--        <id property="createdAt" column="created_at" javaType="string" jdbcType="VARCHAR"/>-->
+<!--        <id property="updatedAt" column="updated_at" javaType="string" jdbcType="VARCHAR"/>-->
+<!--        <id property="grantedAt" column="granted_at" javaType="string" jdbcType="VARCHAR"/>-->
+<!--        <id property="lastLoginAt" column="last_login_at" javaType="string" jdbcType="VARCHAR"/>-->
+<!--    </resultMap>-->
+
+
+<!--    &lt;!&ndash; Member 조회 &ndash;&gt;-->
+<!--    <select id="selectMemberByLdapId" parameterType="java.lang.String" resultMap="MemberMap">-->
+<!--        <include refid="selectMemberSql"/>-->
+<!--        WHERE ldap_id = #{ldapId}-->
+<!--    </select>-->
+
+<!--    <sql id="selectMemberSql">-->
+<!--        SELECT id, ldap_id, name, company, team, role, login_fail_count, login_status,-->
+<!--               DATE_FORMAT(created_at, '%Y-%m-%d %H:%i:%s')  as created_at,-->
+<!--               DATE_FORMAT(updated_at,'%Y-%m-%d %H:%i:%s') as updated_at,-->
+<!--               DATE_FORMAT(granted_at, '%Y-%m-%d %H:%i:%s') as granted_at,-->
+<!--               DATE_FORMAT(last_login_at, '%Y-%m-%d %H:%i:%s') as last_login_at-->
+<!--        FROM member-->
+<!--    </sql>-->
+</mapper>

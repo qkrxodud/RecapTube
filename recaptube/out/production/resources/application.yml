@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active: local
+    include: jwt
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/test
+    username: sa
+    password :
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        # show_sql: true
+        # format_sql: true
+        user_sql: true
+    # defer-datasource-initialization: true
+
+  sql:
+    init:
+      mode: always
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.springframework: debug

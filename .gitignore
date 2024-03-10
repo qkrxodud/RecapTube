@@ -1,40 +1,30 @@
+# 프로그래밍 언어 빌드에 의해 생성된 파일을 무시합니다.
+/target/
+/build/
+
+# 로컬 설정 파일을 무시합니다.
+/application.properties
+/application.yml
+
+# IDE 및 편집기 설정 파일을 무시합니다.
+/.idea/
+/.vscode/
+
+# 로그 파일을 무시합니다.
+/logs/
+
+# 외부 의존성 라이브러리를 무시합니다.
+/.mvn/
+/vendor/
+
+# 애플리케이션 실행 중에 생성된 파일을 무시합니다.
+/*.log
+/*.jar
+
+# 환경 관련 파일을 무시합니다.
+.env
+.env.*
+
 caches/
 wrapper/
 
-HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
-.vscode/
